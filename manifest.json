@@ -1,20 +1,19 @@
 {
-  "name": "RAM Turbo 8GB | 90Hz",
-  "short_name": "RAM 8GB",
-  "start_url": "/index.html",
+  "name": "RAM Turbo 8GB",
+  "short_name": "RAM Turbo",
+  "start_url": "/Ram/",
   "display": "standalone",
-  "orientation": "portrait",
-  "theme_color": "#000000",
   "background_color": "#000000",
-  "description": "Simula uma interface com RAM turbo de 8GB e fluidez de 90Hz.",
+  "theme_color": "#00ff66",
+  "orientation": "portrait",
   "icons": [
     {
-      "src": "icons/ram-192.png",
+      "src": "icon-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "icons/ram-512.png",
+      "src": "icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
