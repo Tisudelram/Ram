@@ -1,61 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#00ff66" />
+
   <title>RAM Turbo</title>
 
-  <!-- Manifesto e ícone -->
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#00ff66">
-  <link rel="icon" href="icon-192.png" sizes="192x192">
-  <link rel="apple-touch-icon" href="icon-512.png">
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icon-192.png" type="image/png" />
+  <link rel="apple-touch-icon" href="icon-512.png" />
+
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
   <style>
     body {
       margin: 0;
-      background: #121212;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: Arial, sans-serif;
+      background: rgba(0, 0, 0, 0.9);
       color: #00ff66;
-      overflow: hidden;
-    }
-
-    .card {
-      background: rgba(0, 0, 0, 0.7);
-      border: 2px solid #00ff66;
-      border-radius: 20px;
-      padding: 40px;
       text-align: center;
-      box-shadow: 0 0 30px #00ff66;
-      animation: pulse 2s infinite;
+      padding-top: 100px;
     }
-
     h1 {
-      font-size: 2em;
-      margin-bottom: 0.5em;
+      font-size: 2.5rem;
     }
-
     p {
-      margin: 0.2em 0;
-      font-size: 1.2em;
-    }
-
-    @keyframes pulse {
-      0% { box-shadow: 0 0 20px #00ff66; }
-      50% { box-shadow: 0 0 40px #00ff66aa; }
-      100% { box-shadow: 0 0 20px #00ff66; }
+      font-size: 1.3rem;
     }
   </style>
 </head>
+
 <body>
-  <div class="card">
-    <h1>RAM Turbo Ativada</h1>
-    <p>8GB / 8GB</p>
-    <p>Taxa de atualização: 90Hz</p>
-  </div>
+  <h1>RAM Turbo Ativada</h1>
+  <p>Memória RAM: 8GB / 8GB</p>
+  <p>Taxa de atualização: 90Hz</p>
 </body>
 </html>
