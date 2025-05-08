@@ -1,54 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simulador RAM 8GB</title>
+  <title>RAM Turbo</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#00ff66">
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: rgba(0, 0, 0, 0.7); /* preto meio transparente */
-      color: #00ff88;
+      background: #121212;
       display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       height: 100vh;
-      animation: smoothScroll 1s linear infinite;
+      font-family: 'Segoe UI', sans-serif;
+      color: #00ff66;
+      overflow: hidden;
     }
 
-    @keyframes smoothScroll {
-      0% { transform: translateY(0); }
-      50% { transform: translateY(0.3px); }
-      100% { transform: translateY(0); }
-    }
-
-    .ram-box {
-      background: #111;
-      border: 2px solid #00ff88;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 0 20px #00ff88;
+    .card {
+      background: rgba(0, 0, 0, 0.7);
+      border: 2px solid #00ff66;
+      border-radius: 20px;
+      padding: 40px;
       text-align: center;
+      box-shadow: 0 0 30px #00ff66;
+      animation: pulse 2s infinite;
     }
 
-    .ram-usage {
-      font-size: 1.5em;
-      margin-top: 10px;
-      animation: pulse 1s infinite alternate;
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      margin: 0.2em 0;
+      font-size: 1.2em;
     }
 
     @keyframes pulse {
-      0% { color: #00ff88; }
-      100% { color: #55ffcc; }
+      0% { box-shadow: 0 0 20px #00ff66; }
+      50% { box-shadow: 0 0 40px #00ff66aa; }
+      100% { box-shadow: 0 0 20px #00ff66; }
     }
   </style>
 </head>
 <body>
-  <div class="ram-box">
+  <div class="card">
     <h1>RAM Turbo Ativada</h1>
-    <div class="ram-usage">8GB / 8GB</div>
+    <p>8GB / 8GB</p>
     <p>Taxa de atualização: 90Hz</p>
   </div>
 </body>
